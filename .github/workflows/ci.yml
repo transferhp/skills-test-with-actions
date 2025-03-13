@@ -36,6 +36,7 @@ jobs:
           path: remark-lint-report.json
           
   post-build:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Download test report
